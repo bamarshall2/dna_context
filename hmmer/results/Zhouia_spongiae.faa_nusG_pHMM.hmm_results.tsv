@@ -1,0 +1,16 @@
+#                                                                 --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name          accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#  ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+NZ_CP094326.1_ORF.8950 -          muscle_verified_nusG -            1.4e-23   82.9   0.0   1.6e-23   82.6   0.0   1.0   1   0   0   1   1   1   1 [3472233-3472755](-) type:complete length:522 frame:-2 start:ATG stop:TAG
+NZ_CP094326.1_ORF.8587 -          muscle_verified_nusG -            4.9e-14   51.8   1.1     6e-14   51.5   1.1   1.1   1   0   0   1   1   1   1 [217345-217894](-) type:complete length:549 frame:-1 start:ATG stop:TAA
+NZ_CP094326.1_ORF.1185 -          muscle_verified_nusG -             0.0033   16.5   0.1    0.0044   16.1   0.1   1.2   1   0   0   1   1   1   1 [2010606-2010918](+) type:complete length:312 frame:1 start:ATG stop:TAG
+#
+# Program:         hmmsearch
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      ./proteins/nusG_pHMM.hmm
+# Target file:     ../orfs/extracted_orfs/Zhouia_spongiae.faa
+# Option settings: hmmsearch --tblout ./results/Zhouia_spongiae.faa_nusG_pHMM.hmm_results.tsv ./proteins/nusG_pHMM.hmm ../orfs/extracted_orfs/Zhouia_spongiae.faa 
+# Current dir:     /mnt/scratch/marshall/comparative_genomics/github/dna_context/hmmer
+# Date:            Mon Oct 23 15:39:32 2023
+# [ok]

@@ -1,0 +1,4 @@
+bacteroides_manifest.txt
+Zeaxanthinibacter_enoshimensis.faa
+Zhouia_spongiae.faa
+Zunongwangia_pacifica.faa

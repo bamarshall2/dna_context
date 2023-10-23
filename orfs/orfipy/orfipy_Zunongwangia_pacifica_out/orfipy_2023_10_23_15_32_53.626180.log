@@ -1,0 +1,6 @@
+2023-10-23 15:32:53 INFO     START LOG
+2023-10-23 15:32:53 INFO     Python info: 3.10.11 | packaged by conda-forge | (main, May 10 2023, 18:58:44) [GCC 11.3.0]
+2023-10-23 15:32:53 INFO     orfipy version: 0.0.4
+2023-10-23 15:32:53 INFO     orfipy ../../database/genomes/Zunongwangia_pacifica --min 150 --max 1000000000 --procs 17 --chunk-size 1000 --strand b --start TTG,CTG,ATG --stop TAA,TAG,TGA --table 1 --pep Zunongwangia_pacifica.faa --outdir orfipy_Zunongwangia_pacifica_out
+2023-10-23 15:32:54 INFO     Processed 100 sequences in 1.11 seconds
+2023-10-23 15:32:54 INFO     END

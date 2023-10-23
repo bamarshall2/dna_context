@@ -1,0 +1,6 @@
+2023-10-23 15:32:51 INFO     START LOG
+2023-10-23 15:32:51 INFO     Python info: 3.10.11 | packaged by conda-forge | (main, May 10 2023, 18:58:44) [GCC 11.3.0]
+2023-10-23 15:32:51 INFO     orfipy version: 0.0.4
+2023-10-23 15:32:51 INFO     orfipy ../../database/genomes/Zeaxanthinibacter_enoshimensis --min 150 --max 1000000000 --procs 17 --chunk-size 1000 --strand b --start TTG,CTG,ATG --stop TAA,TAG,TGA --table 1 --pep Zeaxanthinibacter_enoshimensis.faa --outdir orfipy_Zeaxanthinibacter_enoshimensis_out
+2023-10-23 15:32:52 INFO     Processed 12 sequences in 0.86 seconds
+2023-10-23 15:32:52 INFO     END

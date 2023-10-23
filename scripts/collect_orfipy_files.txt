@@ -1,0 +1,5 @@
+
+
+it's easy, from this location, execute this command in command line
+
+find ../orfs/orfipy/ -name '*.faa' -exec cp -t ../orfs/extracted_orfs/ {} +
