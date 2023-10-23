@@ -10,7 +10,7 @@ path = '/mnt/scratch/marshall/comparative_genomics/bacteroides/hmmer/results'
 path_to_orfs = '/mnt/scratch/marshall/comparative_genomics/bacteroides/orfs/extracted_orfs'
 path_to_genomes = '/mnt/scratch/marshall/comparative_genomics/bacteroides/database/genomes'
 output = "all_captured_data.txt"
-with_seqs_output = "all_hits_evalue_seqs_testing.csv"
+with_seqs_output = "yproteins_aa_upstreamdna.csv"
 
 def capture_tsv_info(file_name):
     #this captures all of entries in the tsv output files. It excludes the
@@ -54,7 +54,7 @@ def pull_ops(data_frame):
     chromosome = chromosome[0]
     if strand == '+':
         start_plus = int(coordinates.split('-')[0])
-        end_plus = start_plus-200
+        end_plus = start_plus-200 #200bp upstream of plus strand being captured
         infasta = FastaFile()
         with open (path_to_genomes + "/" + name_of_species) as inf:
             infasta.read_whole_file(inf)
@@ -68,10 +68,14 @@ def pull_ops(data_frame):
                     print("%s, coordinates %s must be circular for result, plus strand"%(name_of_species,coordinates))
                     return 'Too_close_to_end'
                     continue
+                #This will not circularize chromosome based on assumption that
+                #the database is made up of contigs that don't represent
+                #circular DNA. Add to .pull_seq(end_plus,start_plus,circ=True)
+                #to make that assumption. Same true on minus strand below.
 
     elif strand == '-':
         start_minus = int(coordinates.split('-')[1])
-        end_minus = start_minus+200
+        end_minus = start_minus+200 #200bp upstream of minus strand being captured
         infasta = FastaFile()
         with open (path_to_genomes + "/" + name_of_species) as inf:
             infasta.read_whole_file(inf)
